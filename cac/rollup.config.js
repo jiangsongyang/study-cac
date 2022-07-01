@@ -12,6 +12,7 @@ function createConfig({ dts, esm } = {}) {
   }
   return {
     input: 'src/index.ts',
+    sourceMap: true,
     output: {
       format: dts || esm ? 'esm' : 'cjs',
       file,
