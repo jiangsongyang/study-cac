@@ -77,27 +77,5 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  },
-  "lint-staged": {
-    "linters": {
-      "*.{js,json,ts}": [
-        "prettier --write",
-        "git add"
-      ],
-      "*.md": [
-        "markdown-toc -i",
-        "prettier --write",
-        "git add"
-      ]
-    },
-    "ignore": [
-      "dist/**",
-      "mod.js"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm t && lint-staged"
-    }
   }
 }
