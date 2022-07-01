@@ -10,3 +10,5 @@ cli
 cli.help()
 
 cli.parse()
+
+// node .\index.js rm demo -r
