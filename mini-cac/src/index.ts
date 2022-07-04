@@ -1,3 +1,9 @@
-export const happyPath = () => {
-  return 'happyPath'
-}
+import { CAC } from './CAC'
+
+/**
+ * @param name The program name to display in help and version message
+ */
+const cac = (name = '') => new CAC(name)
+
+export default cac
+export { cac, CAC }
