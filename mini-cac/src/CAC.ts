@@ -8,7 +8,6 @@ export class CAC {
 
   constructor(name = '') {
     this.name = name
-    this.
   }
 
   option(rawName: string, description: string, config?: OptionConfig) {
