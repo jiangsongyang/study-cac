@@ -74,8 +74,11 @@ class CAC extends EventEmitter {
    * Add a sub-command
    */
   command(rawName: string, description?: string, config?: CommandConfig) {
+    // 创造一条命令
     const command = new Command(rawName, description || '', config, this)
+    // 混入全局命令
     command.globalCommand = this.globalCommand
+    // 推入 command 数组里
     this.commands.push(command)
     return command
   }

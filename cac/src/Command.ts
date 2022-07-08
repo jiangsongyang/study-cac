@@ -50,7 +50,9 @@ class Command {
   ) {
     this.options = []
     this.aliasNames = []
+    /** 命令名称 */
     this.name = removeBrackets(rawName)
+    /** 命令参数 */
     this.args = findAllBrackets(rawName)
     this.examples = []
   }
