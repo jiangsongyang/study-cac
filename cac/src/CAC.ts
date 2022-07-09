@@ -233,6 +233,7 @@ class CAC extends EventEmitter {
     }
 
     if (!this.matchedCommand && this.args[0]) {
+      // 发射事件
       this.emit('command:*')
     }
 
